@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+@import 'normalize';
+
+#index {
+  margin: 15px 15px 15px 15px;
+}
+.btn-primary {
+  margin: 15px 15px 15px 15px;
+}
+
+h2 {
+  font-family: 'Libre Baskerville', serif;
+}

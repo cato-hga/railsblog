@@ -2,13 +2,37 @@
 <html>
 <head>
   <title>Railsblog</title>
+  <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="page_wrapper">
+      <li><%= link_to "My Blog", root_path %></li>
+  </div>
+  <div class="page_wrapper">
+      <li><a href="https://github.com/cato-hga">Github</a></li>
+      <li><a href="mailto:jchristopher.cato@gmail.com">Email</a></li>
+  </div>
+  <div>
+    <button type="button" class="btn btn-primary">
+      <%= link_to "New Post", new_post_path %>
+    </button>
+    <button type="button" class="btn btn-primary">Log Out</button>
+  </div>
 
 <%= yield %>
 
 </body>
+<p><button type="button" class="btn btn-primary">Admin Login</button></p>
 </html>

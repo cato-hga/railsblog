@@ -1,4 +1,5 @@
-<h1><%= @post.title %></h1>
+<div class="page_wrapper">
+<h2><%= @post.title %></h2>
 
 <p>
   Submitted <%= time_ago_in_words(@post.created_at) %> Ago
@@ -7,3 +8,4 @@
 <p>
   <%= @post.body %>
 </p>
+</div>
