@@ -25,14 +25,22 @@
       <li><a href="https://github.com/cato-hga">Github</a></li>
       <li><a href="mailto:jchristopher.cato@gmail.com">Email</a></li>
   </div>
-  <div>
-    <button type="button" class="btn btn-primary">
-      <%= link_to "New Post", new_post_path %>
-    </button>
-    <button type="button" class="btn btn-primary">Log Out</button>
-  </div>
+
+  <% if user_signed_in? %>
+    <div>
+      <button type="button" class="btn btn-primary">
+        <%= link_to "New Post", new_post_path %>
+      </button>
+      <button type="button" class="btn btn-primary">
+        <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+      </button>
+    </div>
+  <% end %>
 
 <%= yield %>
 
 </body>
+<% if !user_signed_in? %>
+  <p>Admin Login</p>
+<% end %>
 </html>

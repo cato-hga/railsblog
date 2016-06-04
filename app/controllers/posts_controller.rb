@@ -1,4 +1,7 @@
 class PostsController < ApplicationController
+  #authenticate_user! is from the devise gem.
+  before_action :authenticate_user!, except: [:index, :show]
+
   def index
     @posts = Post.all.order(created_at: :desc)
   end
