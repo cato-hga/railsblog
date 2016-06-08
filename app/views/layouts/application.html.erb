@@ -17,23 +17,28 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="page_wrapper">
-      <li><%= link_to "My Blog", root_path %></li>
-      <li><%= link_to "About", about_path %></li>
-  </div>
-  <div class="page_wrapper">
-      <li><a href="https://github.com/cato-hga">Github</a></li>
-      <li><a href="mailto:jchristopher.cato@gmail.com">Email</a></li>
-  </div>
+ <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">John Cato</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><%= link_to "My Blog", root_path %></li>
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Github", 'https://github.com/cato-hga'%></li>
+        <li><%= link_to "Email", 'mailto:jchristopher.cato@gmail.com'%></li>
+      </ul>
+    </div>
+  </nav>
 
   <% if user_signed_in? %>
-    <div>
-      <button type="button" class="btn btn-primary">
+    <div><br>
+      <button type="button" class="btn btn-default">
         <%= link_to "New Post", new_post_path %>
       </button>
-      <button type="button" class="btn btn-primary">
+      <button type="button" class="btn btn-default">
         <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
-      </button>
+      </button><br><br>
     </div>
   <% end %>
 

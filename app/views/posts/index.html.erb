@@ -1,6 +1,7 @@
 <% @posts.each do |post| %>
   <div class="page_wrapper">
-    <h2><%= link_to post.title, post%></h2>
+    <h2><%= link_to post.title, post %></h2>
+    <p><%=  post.body.truncate_words(15) %> <%= link_to '...Read more', post %></p>
     <p><%= post.created_at.strftime("%B, %d, %Y")%></p>
   </div>
 <% end %>
