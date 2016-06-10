@@ -1,6 +1,6 @@
 <div class="page_wrapper">
 <h2><%= @post.title %></h2>
-
+<h2><%= image_tag @post.post_image_url(:thumb).to_s %></h2>
 <p>
   Submitted <%= time_ago_in_words(@post.created_at) %> Ago
   <% if user_signed_in? %>
@@ -9,7 +9,7 @@
   <% end %>
 </p>
 
-<p>
+<p class="wrap">
   <%= @post.body %>
 </p>
 

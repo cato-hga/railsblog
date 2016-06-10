@@ -30,6 +30,14 @@ h2 {
   margin: 15px;
 }
 
-nav.navbar.navbar-inverse {
+nav.navbar.navbar-default {
   margin: 1px;
+}
+
+body {
+  background-color: grey;
+}
+
+.wrap {
+  word-wrap: break-word;
 }

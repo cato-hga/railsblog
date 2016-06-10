@@ -7,6 +7,7 @@
 #  body       :text
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  post_image :string
 #
 
 class Post < ActiveRecord::Base
@@ -14,6 +15,8 @@ class Post < ActiveRecord::Base
 
   validates :title, presence: true, length:{minimum: 3}
   validates :body, presence: true
+
+  mount_uploader :post_image, PostImageUploader
 
 
 end
