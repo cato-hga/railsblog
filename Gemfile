@@ -6,6 +6,10 @@ gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
 group :production do
   gem 'pg'
+
+  gem 'devise', '~> 4.1', '>= 4.1.1'
+
+  gem 'will_paginate', '~> 3.1'
 end
 
 group :development do
