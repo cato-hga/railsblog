@@ -1,20 +1,20 @@
 <h1>Hello!</h1>
+  <div id="contact-page">
+    <%= form_for @contact do |f| %>
+      <%= f.label :name %><br>
+      <%= f.text_field :name, required: true, :class => "form-control" %>
+      <br>
 
-  <%= form_for @contact do |f| %>
-    <%= f.label :name %><br>
-    <%= f.text_field :name, required: true %>
-    <br>
+      <%= f.label :email %><br>
+      <%= f.email_field :email, required: true, :class => "form-control" %>
+      <br>
 
-    <%= f.label :email %><br>
-    <%= f.email_field :email, required: true %>
-    <br>
+      <%= f.label :message %><br>
+      <%= f.text_area :message, required: true, :class => "form-control" %>
+      <br>
 
-    <%= f.label :message %><br>
-    <%= f.text_field :message, required: true %>
-    <br>
+      <%= f.hidden_field :nickname, hint: "blank" %>
 
-    <%= f.label :nickname %><br>
-    <%= f.hidden_field :nickname, hint: "blank" %>
-
-    <%= f.submit 'Send', class: "button" %>
-  <% end %>
+      <%= f.submit 'Send', class: "button" %>
+    <% end %>
+  </div>

@@ -22,8 +22,23 @@
   margin: 15px 15px 15px 15px;
 }
 
-h2 {
-  font-family: 'Libre Baskerville', serif;
+h1,h2 {
+   font-family: 'Oswald', sans-serif;
+}
+
+.container-fluid {
+  border-bottom: 1px solid #337ab7;
+}
+
+p {
+  font-family: 'Abel', sans-serif;
+  font-size: 20px;
+}
+
+
+.top {
+  font-family: 'Abel', sans-serif;
+  font-size: 20px;
 }
 
 #sign_up {
@@ -42,6 +57,12 @@ body {
   word-wrap: break-word;
 }
 
+#circle-img {
+  border-radius: 50%;
+  margin: 10px;
+  height: 250px;
+  width: 250px;
+}
 
 
 /*flash*/

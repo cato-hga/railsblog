@@ -7,7 +7,7 @@
     </div>
     <div class="col-lg-12 color">
       <p class="wrap"><%=  post.body.truncate_words(15) %> <%= link_to '...Read more', post %></p>
-      <p><%= post.created_at.strftime("%B, %d, %Y")%></p>
+      <p>Posted on <%= post.created_at.strftime("%B, %d, %Y")%></p>
     </div>
     <% end %>
   </div>
