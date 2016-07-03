@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
+gem "wysiwyg-rails"
+gem "font-awesome-rails"
 # Use sqlite3 as the database for Active Record
 group :production do
   gem 'mail_form', '~> 1.5', '>= 1.5.1'
