@@ -26,7 +26,6 @@
           <%= f.label :body %><br>
           <%= f.text_area :body, id: "wysiwyg" %>
         </p>
-
         <p>
           <%= f.submit %>
         </p>
@@ -37,8 +36,9 @@
     toolbarInline: false,
     heightMin: '300px',
     charCounterCount: true,
-    buttons: ['bold', 'italic', 'underline','formatBlock','align',
-      'insertUnorderedList', 'insertOrderedList', 'outdent', 'indent',
+    htmlAllowedTags: ['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
+    buttons: ['bold', 'italic', 'underline','paragraphFormat','align',
+      'formatUL', 'formatOL', 'outdent', 'indent',
       'insertLink', 'html'],
   })
 </script>

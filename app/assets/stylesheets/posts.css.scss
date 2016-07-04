@@ -5,11 +5,33 @@
 .page_wrapper {
   margin: 15px;
 
-}
 
+}
+ .col-md-10 {
+  border-bottom: thin solid slategrey;
+}
+ .col-md-4 {
+   margin-left: 40px;
+   margin-top: -250px;
+   margin-right: -230px;
+   border-bottom: thin solid slategrey;
+   box-shadow:  5px 5px 2px #e1e8e8;
+ }
+
+ .fa {
+   font-size: xx-large;
+   margin-top: -5px;
+ }
+
+ a {
+   color: darkturquoise;
+ }
+
+ a:hover {
+  color: rgba(0, 206, 209, 0.38)
+}
 .color {
-  box-shadow:  5px 5px 2px slategrey;
- background-color: lightgrey;
+  box-shadow:  5px 5px 2px #e1e8e8;
 }
 
 .form-control {

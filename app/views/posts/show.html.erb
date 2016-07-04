@@ -8,13 +8,8 @@
       <%= link_to 'Delete?', post_path(@post), method: :delete, data: { confirm: 'Uh oh! Are you sure you would like to delete post?'} %>
   <% end %>
 </p>
-
-<p class="wrap">
-  <%= @post.body %>
-</p>
-
   <div class="froala-view">
-    <%= simple_format(@post.body) %>
+    <%= simple_format(@post.body).html_safe %>
   </div>
 
   <div>
