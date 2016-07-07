@@ -43,8 +43,14 @@
     </div>
   <% end %>
 
-<%= yield %>
-
+<div class="container-fluid">
+  <div class="col-sm-8">
+    <%= yield %>
+  </div>
+  <div class="col-sm-4">
+    <%= render 'posts/connect' %>
+  </div>
+</div>
 </body>
 <% if !user_signed_in? %>
   <p>Admin Login</p>

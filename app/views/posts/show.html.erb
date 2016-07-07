@@ -13,11 +13,6 @@
   </div>
 
   <div>
-    <h2><%= @post.comments.count %> Comments</h2>
-    <%= render @post.comments %>
-
-
-    <h3>Add a comment:</h3>
-    <%= render "comments/form" %>
+    <%= render 'disqus'%>
   </div>
 </div>

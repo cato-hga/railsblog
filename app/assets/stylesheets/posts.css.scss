@@ -7,24 +7,25 @@
 
 
 }
- .col-md-10 {
+ .col-sm-8 {
   border-bottom: thin solid slategrey;
 }
- .col-md-4 {
+ /*.col-md-4 {
    margin-left: 40px;
-   margin-top: -250px;
+   margin-top: -230px;
    margin-right: -230px;
    border-bottom: thin solid slategrey;
    box-shadow:  5px 5px 2px #e1e8e8;
- }
+   }*/
 
  .fa {
    font-size: xx-large;
    margin-top: -5px;
+   color: black
  }
 
  a {
-   color: darkturquoise;
+   color: black;
  }
 
  a:hover {
