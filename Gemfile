@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.5'
 gem "wysiwyg-rails"
 gem "font-awesome-rails"
+gem 'friendly_id', '~> 5.1'
 # Use sqlite3 as the database for Active Record
 group :production do
   gem 'mail_form', '~> 1.5', '>= 1.5.1'
