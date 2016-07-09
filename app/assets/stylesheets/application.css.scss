@@ -19,7 +19,9 @@
  */
 @import 'normalize';
 
-
+a.navbar-brand.name {
+  color: rgb(255, 193, 7);
+}
 #index {
   margin: 15px 15px 15px 15px;
 }
@@ -28,7 +30,7 @@
 }
 
 h1,h2 {
-   font-family: 'Oswald', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .container-fluid {
@@ -40,15 +42,17 @@ h1,h2 {
   color: black;
 }
 
-
+.navbar-default .navbar-brand:hover {
+  color:rgb(255, 193, 7);
+}
 .navbar-default .navbar-nav>li>a:hover {
 color: white;
 }
 
 p {
-  font-family: 'Abel', sans-serif;
   font-size: 20px;
   word-wrap: break-word;
+  font-family: 'PT Mono';
 }
 
 .fa.fa-twitter:hover {
@@ -75,7 +79,7 @@ p {
 }
 
 html {
-  height: 70%;
+  height: 82%;
 }
 
 nav.navbar.navbar-default {
@@ -94,7 +98,7 @@ body {
 #circle-img {
   border-radius: 50%;
   margin: 10px;
-  height: 250px;
+  height: 230px;
   width: 250px;
 }
 

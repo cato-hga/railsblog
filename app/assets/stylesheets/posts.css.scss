@@ -8,7 +8,6 @@
 
 }
  .col-sm-8 {
-  border-bottom: thin solid slategrey;
 }
  /*.col-md-4 {
    margin-left: 40px;
@@ -31,11 +30,16 @@
  a:hover {
   color: rgba(0, 206, 209, 0.38)
 }
-.color {
-  box-shadow:  5px 5px 2px #e1e8e8;
-}
+
+ .border {
+   margin-bottom: 0.75em;
+   border-bottom: thin solid #FF9F1C;
+ }
+
+ .n_logged_in {
+   color: #FF9F1C;
+ }
 
 .form-control {
   line-height: 4;
 }
-
