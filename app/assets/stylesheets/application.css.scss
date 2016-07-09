@@ -51,7 +51,20 @@ p {
   word-wrap: break-word;
 }
 
+.fa.fa-twitter:hover {
+  color: white;
+}
 
+.fa.fa-linkedin-square:hover {
+  color: dodgerblue;
+}
+
+.fa.fa-github-square:hover {
+  color: lightgrey;
+}
+.container-fluid {
+  height: 100%;
+}
 .top {
   font-family: 'Abel', sans-serif;
   font-size: 20px;
@@ -61,12 +74,17 @@ p {
   margin: 15px;
 }
 
+html {
+  height: 70%;
+}
+
 nav.navbar.navbar-default {
   margin: 1px;
 }
 
 body {
   background-color: white;
+  height: 100%;
 }
 
 .wrap {
