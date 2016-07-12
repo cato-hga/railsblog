@@ -2,15 +2,15 @@
 
 
   <div>
-    <div class="color">
-      <% @posts.each do |post| %>
-      <h2 class="text-muted"><%= link_to post.title, post %></h2>
-      <h2 class="text-muted"><%= image_tag post.post_image_url(:thumb).to_s %></h2>
-      <p class="wrap"><%=  post.body.truncate_words(15).html_safe %> <%= link_to '...Read more', post %></p>
-      <p class="border">Posted on <%= post.created_at.strftime("%B, %d, %Y")%></p>
-      <% end %>
-      <%= will_paginate @posts %>
-    </div>
+    <% @posts.each do |post| %>
+      <div class="border">
+        <h2 class="text-muted"><%= link_to post.title, post %></h2>
+        <h2 class="text-muted"><%= image_tag post.post_image_url(:thumb).to_s %></h2>
+        <p class="wrap"><%=  post.body.truncate_words(15).html_safe %> <%= link_to '...Read more', post %></p>
+        <p>Posted on <%= post.created_at.strftime("%B, %d, %Y")%></p>
+      </div>
+    <% end %>
+    <%= will_paginate @posts %>
   </div>
 
 
