@@ -3,16 +3,22 @@
   <h1> About John</h1>
   <p>Thanks for visiting my site! My name is John Cato and I'm a software developer specializing in Ruby/Rails. I live in sunny Tampa, FL with my beautiful wife.</p>
   <ul class="text-left">
-    <p>I enjoy:</p>
-    <li>Ruby/Rails</li>
-    <li>Learning new technologies</li>
-    <li>Podcasts</li>
-    <li>Coffee brewed with a Chemex</li>
+     <strong><p><%= link_to "Hobbies", "#", id: "currenthobbies-link"%></p></strong>
+    <div class="hobbies_hide">
+      <p>I enjoy:</p>
+      <li>Ruby/Rails</li>
+      <li>Learning new technologies</li>
+      <li>Podcasts</li>
+      <li>Coffee brewed with a Chemex</li>
+    </div>
   </ul>
   <ul class="text-left">
-    <p>Currently learning:</p>
-    <li>Elixir & Phoenix</li>
-    <li>Emberjs</li>
+    <strong><p><%= link_to "Learning", "#", id: "currentlylearning-link"  %></p></strong>
+    <div class="pages_hide">
+      <p>Currently learning:</p>
+      <li>Elixir & Phoenix</li>
+      <li>Emberjs</li>
+    </div>
   </ul>
   <ul class="text-left">
     <p>Feel free to shoot me an <%= link_to "email", "mailto:jchristopher.cato@gmail.com", class:"email" %> or use the contact form if you want to get in touch.</p>
