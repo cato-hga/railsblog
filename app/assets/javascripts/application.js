@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require froala_editor.min.js
+//= require plugins/video.min.js
+//= require plugins/link.min.js
 //= require plugins/char_counter.min.js
 //= require_tree .
 
